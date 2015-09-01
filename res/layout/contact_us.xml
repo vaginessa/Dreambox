@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:clickable="true"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+    android:layout_height="46dp"
+    android:background="#333333"
+    android:orientation="horizontal" >
+    <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:layout_gravity="center"
+        	android:textColor="#eeeeee"
+        	android:textSize="22sp"
+        	android:gravity="center"
+        	android:text="联系我们"/>
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal">
+    		<Button 
+        android:id="@+id/contact_us_icon_back"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/btn_back_icon"/>
+    		<TextView 
+    		    android:layout_width="wrap_content"
+        		android:layout_height="fill_parent"
+        		android:layout_weight="1"/>
+    		
+    	</LinearLayout>
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="2px"
+    	android:background="#555555"
+        />
+    
+    <!-- ****************************************************************************** -->
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shadow" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon_dreambox_ic" />
+
+       
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:src="@drawable/icon_dreambox_text" />
+
+        <!-- =================================================================== -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/contact_us_relativelayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="关注微信"
+                    android:textColor="#666"
+                    android:textSize="16sp"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="iTimeTraveler"
+                    android:textColor="#999"
+                    android:textSize="15sp" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contact_us_relativelayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="关注新浪微博"
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contact_us_relativelayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="访问官方网站"
+                    android:textColor="#666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_cuc" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

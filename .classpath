@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/open_sdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mta-sdk-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/weibo_sdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/apache-log4j-1.2.16/log4j-1.2.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/commons-codec-1.3/commons-codec-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/commons-logging-1.1.1/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/flexjson-2.1/flexjson-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/httpcomponents-client-4.1.1/httpclient-4.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/httpcomponents-client-4.1.1/httpcore-4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu_BCS_libs/bcs-sdk-java_1.4.5.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

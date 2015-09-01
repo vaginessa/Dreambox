@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/BigImg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#3d8cd6"
+            android:scaleType="centerCrop"
+            android:src="@null" />
+        <!--
+            <ImageButton 
+            android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:layout_gravity="bottom"
+        	android:background="#99444444"/> 
+        -->
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa" />
+
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_gravity="center"
+        android:background="#eee" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login_JsLook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_white"
+                android:gravity="center"
+                android:text="进入应用"
+                android:textColor="#444444"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/login_Gen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_green"
+                android:gravity="center"
+                android:text="登  录"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        <com.cuccs.dreambox.layouts.SlideSwitch 
+            android:id="@+id/Homepage_SlideSwitch"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+			android:visibility="gone" >
+            
+            <!-- Arrow Animation -->
+        	<ImageView 
+        	    android:id="@+id/getup_arrow"
+				android:layout_width="40dp"
+		    	android:layout_height="20dp"
+		    	android:layout_gravity="right|center_vertical" 
+		    	android:layout_marginRight="20dip"
+		    	android:layout_marginBottom="5dip"
+		    	android:background="@anim/slider_tip_anim">
+	    	</ImageView>
+        </com.cuccs.dreambox.layouts.SlideSwitch>
+        
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:gravity="center"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="Dreambox v1.0    中国传媒大学\nCommunication University of China\n"
+        android:textColor="#aaaaaa"
+        android:textSize="10sp" />
+
+</LinearLayout>

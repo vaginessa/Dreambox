@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright(C) 2010-2010 RabiSoft -->
+<!-- GNU Lesser General Public License -->
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="100dip">
+	<View
+		android:id="@+id/ViewOff"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/slideswitch_bg_off">
+	</View>
+	<View
+		android:id="@+id/ViewOn"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/slideswitch_bg_on">
+	</View>
+	<View
+		android:id="@+id/ViewBg"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/slideswitch_bg_off">
+	</View>
+	<Button
+		android:id="@+id/ButtonBar"
+		android:layout_height="50dip"
+		android:background="@drawable/slideswitch_bar"
+		android:layout_width="fill_parent">
+	</Button>
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    描边 采用那样的方式将外形轮廓线画出来，width表示笔的粗细，
+	dashWidth表示小横线的宽度，dashGap表示小横线之间的距离
+    -->
+
+    <stroke
+        android:dashWidth="3dp"
+        android:width="1px"
+        android:color="#55222222" />
+
+    <!-- 实心 -->
+    <solid android:color="#55292c2d" />
+    
+    <!-- 圆角
+    <corners android:radius="2dp" />
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" /> -->
+
+</shape>

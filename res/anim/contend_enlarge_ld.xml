@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/decelerate_interpolator">>
+    
+    <!-- 声明动画对象进入屏幕时的缩放动画 -->
+    <scale android:fromXScale="0.5" android:toXScale="100%"
+           android:fromYScale="0.6" android:toYScale="100%"
+           android:pivotX="0%" 
+           android:pivotY="100%"
+           android:duration="300" />
+
+</set>

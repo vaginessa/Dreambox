@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/w01" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+    
+    <ImageView
+            android:id="@+id/imageLeft"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"            
+            android:src="@drawable/w_left" />
+        
+        <ImageView
+            android:id="@+id/imageRight"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"            
+            android:src="@drawable/w_right" />
+        <TextView 
+            android:id="@+id/anim_text"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content" 
+        	android:gravity="center" 
+        	android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+        	android:text=" \n \n懂得备份\n\n是一种人生态度\n \n "         	
+        	android:textSize="22sp"
+        	android:textColor="#fff" 
+        />
+    <Button
+              android:id="@+id/startBtn"
+              android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="120dp"
+              android:text="开始"
+              android:textSize="18sp"
+              android:textColor="#fff"
+              android:background="@drawable/btn_style_green"              
+			  android:layout_gravity="center_vertical"
+			  android:onClick="startbutton"
+              />
+</RelativeLayout>

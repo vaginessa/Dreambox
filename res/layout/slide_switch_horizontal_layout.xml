@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright(C) 2010-2010 RabiSoft -->
+<!-- GNU Lesser General Public License -->
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="50dip">
+	<View
+		android:id="@+id/ViewBg"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/slideswitch_bg">
+	</View>
+	
+	<View
+		android:id="@+id/ViewOff"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/slideswitch_bg_off">
+	</View>
+	<TextView 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:text="滑动进入应用"
+		android:textColor="#666666"
+		android:textSize="22sp"
+	    />
+	<View
+		android:id="@+id/ViewOn"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/slideswitch_bg_on">
+	</View>
+	
+	
+	<Button
+		android:id="@+id/ButtonBar"
+		android:background="@drawable/slideswitch_bar"
+		android:layout_width="50dp"
+		android:layout_height="fill_parent"
+		android:text="Test C"
+		android:checked="false"
+		android:orientation="horizontal">
+	</Button>
+</FrameLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_bg"
+            android:gravity="center"
+            android:text="帐  号"
+            android:textColor="#3d8cd6"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/account_icon_back"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back_icon" />
+    </FrameLayout>
+
+    <!-- ====================================================================== -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#2d2d2d"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E8E8"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/a_09" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="203dp"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginLeft="15dp" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/account_avatar_bg" />
+
+                        <ImageView
+                            android:id="@+id/content_account_avatar_image"
+                            android:layout_width="82dp"
+                            android:layout_height="82dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="1px"
+                            android:layout_marginTop="1px"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/account_avatar" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/content_account_avatar_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="47dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:shadowColor="#333333"
+                        android:shadowDx="1"
+                        android:shadowDy="2"
+                        android:shadowRadius="1"
+                        android:text="Mike"
+                        android:textColor="#666"
+                        android:textSize="23sp" />
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="48dp"
+                        android:src="@drawable/icon_sex_male" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#ffffff"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="上次本地备份"
+                android:textColor="#666"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/content_account_lastSDcard_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="2014年01月15日"
+                    android:textColor="#444"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/content_account_lastSDcard_whatday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_marginRight="5dp"
+                    android:text="周五"
+                    android:textColor="#666"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#ffffff"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="上次云端备份"
+                android:textColor="#666"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/content_account_lastCloud_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="2014年01月06日"
+                    android:textColor="#444"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/content_account_lastCloud_whatday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_marginRight="5dp"
+                    android:text="周二"
+                    android:textColor="#666"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="已用云端空间"
+                    android:textColor="#555"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/content_account_CloudSpace_Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="2.8MB"
+                    android:textColor="#16f"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/content_account_Exit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_style_red"
+                android:gravity="center"
+                android:text="清理本地缓存"
+                android:textColor="#fff"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

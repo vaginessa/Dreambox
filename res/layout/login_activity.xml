@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/baise_bgbg"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+    
+    <!-- 用户头像区 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp">
+        <ImageView
+            android:id="@+id/head_show"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_gravity="center"
+        	android:src="@drawable/manuser">          
+        </ImageView>
+        <ImageView
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_gravity="center"
+        	android:src="@drawable/head_cover"
+        	/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	>
+            <ImageButton
+                android:id="@+id/btn_qqLogin"
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_weight="1"
+        		android:layout_gravity="center_vertical"
+        		android:background="@null"
+        		android:scaleType="center"
+        		android:src="@drawable/btn_qqlog_null"/>
+            <ImageButton
+                android:id="@+id/btn_sinaLogin"
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_weight="1"
+        		android:layout_gravity="center_vertical"
+        		android:background="@null"
+        		android:src="@drawable/btn_sinalog_null"/>
+        </LinearLayout>
+	</FrameLayout>
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edit"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/user" />
+            <EditText
+                android:id="@+id/editUser"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="8dip"
+                android:textCursorDrawable="@null"
+                android:textColor = "#ff8c00"
+                android:background="@null"
+                android:hint="手机号/用户名"
+                android:singleLine="true" >
+                
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:id="@+id/layoutPwd"
+            android:background="@drawable/bg_edit"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dip"
+                android:src="@drawable/lock" />
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="2dip"
+                android:textCursorDrawable="@null"
+                android:textColor = "#ff8c00"
+                android:background="@null"
+                android:password="true"
+                android:hint="请输入密码"
+                android:singleLine="true" />
+        </LinearLayout>
+        
+        <Button
+        android:id="@+id/loginButton"
+        android:background="@drawable/loginbutton_style"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:text="登 录"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="7dp">
+        <Button 
+        android:id="@+id/registerButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@drawable/preference_single_item_null"
+        android:text="注册 "
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+    </LinearLayout>
+    
+</LinearLayout>

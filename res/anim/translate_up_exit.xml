@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 声明Activity退出时使用的动画资源
+     android:interpolator:指定在设定时间内动画移动过程中插补器，用于改善动画的平滑度
+     android:zAdjustment:允许再动画播放期间，调整播放内容在Z轴方向的顺序，normal（0）：真正播放的
+            动画内容保持当前的Z轴顺序，top（1）：在动画播放期间，强制把当前播放的内容放到其他内容的上面；
+     bottom（-1）：在动画播放期间，强制把当前播放的内容放到其他内容之下。
+-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:zAdjustment="top">
+    
+
+    <translate android:fromYDelta="0%"
+        	android:toYDelta="-100%"
+        	android:duration="400"
+        />
+
+</set>

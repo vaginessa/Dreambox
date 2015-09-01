@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#e2e3eb</color>
+	<color name="ligthgray">#e8e7ef</color>
+	<color name="graydark">#d9b6bac7</color>
+	<color name="transparent">#00000000</color>
+    <color name="card_bisque">#ffbb33</color><!--桔黄色 -->
+    <color name="card_green">#99cc00</color><!--绿色 -->
+    <color name="card_red">#ff4444</color><!--红色 -->
+    <color name="card_purple">#aa66cc</color><!-- 紫色 -->
+    <color name="card_blue">#33b5e5</color><!-- 蓝色 -->
+</resources>

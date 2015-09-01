@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/login_QS"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/title_bar_bg"
+            android:gravity="center"
+            android:text="Dream Box"
+            android:textColor="#f2f2f2"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/icon_menu"
+            android:layout_width="46dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/mm_menu_icon" />
+    </FrameLayout>
+
+    <!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/MyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:background="#3d8cd6" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="17"
+                android:adjustViewBounds="false"
+                android:background="@drawable/content_account" />
+        </LinearLayout>
+        <!-- ========================================== -->
+
+        <LinearLayout
+            android:id="@+id/MyRecover"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:background="#cb7efe" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="17"
+                android:background="@drawable/content_restore" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/MyBackup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:background="#92de32" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="17"
+                android:background="@drawable/content_backup" />
+        </LinearLayout>
+        <!-- ========================================== -->
+
+        <LinearLayout
+            android:id="@+id/MyLookOver"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:background="#fd6f25" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="17"
+                android:background="@drawable/content_look" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

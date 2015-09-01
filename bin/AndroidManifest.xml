@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cuccs.dreambox"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="14" />
+
+    <!-- 指定允许访问网络资源的权限 -->
+	<uses-permission android:name="android.permission.INTERNET"/> 
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取联系人权限 --> 
+   	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+   	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+   	<!-- 读取短信权限 --> 
+   	<uses-permission android:name="android.permission.READ_SMS" />
+   	<uses-permission android:name="android.permission.WRITE_SMS" /> 
+   	<!-- 拨打电话权限 -->
+   	<uses-permission android:name="android.permission.CALL_PHONE"/> 
+    <!-- 设置手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 创建快捷方式图标权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 开启屏幕常亮权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/notitle">
+  
+        <activity
+            android:name="com.cuccs.dreambox.SplashActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">	<!-- screenOrientation设置为纵向显示，禁止横屏 -->
+            <!-- 指定程序入口函数 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 在应用的AndroidManifest.xml增加配置的<application>节点下增加以下配置（注：不配置将会导致无法调用Tencent的API） -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100512008" /><!-- 腾讯APP_ID -->
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.cuccs.dreambox.Whatsnew" android:screenOrientation="portrait"  />
+        <activity android:name="com.cuccs.dreambox.WhatsnewDoor" android:screenOrientation="portrait"  />
+        <activity android:name="com.cuccs.dreambox.Homepage" android:screenOrientation="portrait"  />
+        <activity android:name="com.cuccs.dreambox.Group" android:screenOrientation="portrait"   />
+        <activity android:name="com.cuccs.dreambox.LoginActivity" android:screenOrientation="portrait"  />              
+        <activity android:name="com.cuccs.dreambox.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.cuccs.dreambox.ContentActivity" android:screenOrientation="portrait"   /> 
+        <activity android:name="com.cuccs.dreambox.Content_Account" android:screenOrientation="portrait"   />           
+        <activity android:name="com.cuccs.dreambox.Content_Restore" android:screenOrientation="portrait"   />            
+        <activity android:name="com.cuccs.dreambox.Content_BackUp" android:screenOrientation="portrait"   />            
+        <activity android:name="com.cuccs.dreambox.Content_LookOver" android:screenOrientation="portrait"   />            
+		<activity android:name="com.cuccs.dreambox.LoadPhotoAlbum" android:screenOrientation="portrait"   /> 
+		<activity android:name="com.cuccs.dreambox.LoadAddressbook" android:screenOrientation="portrait"   />
+		<activity android:name="com.cuccs.dreambox.LoadShortMessage" android:screenOrientation="portrait"   />
+		<activity android:name="com.cuccs.dreambox.LoadPhonecalls" android:screenOrientation="portrait"   />
+		<activity android:name="com.cuccs.dreambox.FunctionIntroduction" android:screenOrientation="portrait"   />
+		<activity android:name="com.cuccs.dreambox.ContactUs" android:screenOrientation="portrait"   />
+    	<activity android:name="com.cuccs.dreambox.Website_Dreamanster" android:screenOrientation="portrait"   />
+    	<activity android:name="com.cuccs.dreambox.TermsofService" android:screenOrientation="portrait"   />
+    </application>
+
+</manifest>

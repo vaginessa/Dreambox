@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    android:layout_height="43dp"
+    android:orientation="horizontal" >
+    <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="#383838"
+        	android:textStyle="normal"
+        	android:textColor="#cccccc"
+        	android:textSize="21sp"
+        	android:gravity="center"
+        	android:text="照片相册"/>
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="2px"
+    	android:background="#555555" 
+    	/>
+     <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:background="#92de32" />
+     
+     
+     <ExpandableListView 
+         android:id ="@+id/expandableListView"  
+        android:layout_width ="fill_parent"  
+        android:layout_height ="wrap_content"
+        android:listSelector="#22000000"
+        android:divider="@drawable/list_line"
+        android:drawSelectorOnTop="true" 
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        ></ExpandableListView>
+        
+</LinearLayout>
